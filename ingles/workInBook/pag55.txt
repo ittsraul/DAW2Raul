@@ -1,0 +1,27 @@
+5-
+
+1-a
+2-f
+3-e
+4-b
+5-c
+6-d
+
+6-
+
+1-owner
+2-update
+3-store
+4-records
+5-retail
+6-retrieve		recuperar
+7-query		consultar
+
+7-
+
+1-b
+2-c
+3-e
+4-b
+5-a
+6-f

@@ -1,0 +1,171 @@
+/*VARIABLES*/
+
+:root{
+    --white: #fff;
+}
+
+/*GENERAL STYLES*/
+
+header{
+    background-color: rgb(17, 8, 42);
+    color:  white;
+}
+a:link{
+    color: blue;
+}
+
+a:hover{
+    color: rgb(165, 165, 175);
+}
+
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_MGBS_eYyWZe87XPyoBaOHKMxMYmqsL3iWQ&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.general{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/*TYPOGRAPHY*/
+
+h1,h2{
+    text-align: center;
+    color: rgb(125, 125, 14);
+    font-family: "Montserrat";
+}
+
+p{
+    font-family: "fantasy";
+    color: var(--white);
+}
+
+.backgroundCarrusel{
+    background-color: rgb(17, 8, 42);
+}
+/*MEDIA QUERIES FOR A TABLET'S*/
+@media (min-width: 768px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+/*         width: 200px; */
+        height: 200px; 
+         padding: 100px; 
+    }
+}
+@media (min-width: 768px){
+    .studies{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5B12lZqKVeA2rGVt9TYeD-FNTbykDEo7wvA&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    /* width: 33%;
+    float: left;
+    flex-direction: column;
+    position: relative;
+    height: 250px; */
+}
+}
+
+@media (min-width: 768px){
+    .experience{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZjDiTSMeqX4nZTZi5XyOmQvPNVvXLwsnIvw&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    /* float: left;
+    width: 33%;
+    flex-direction: column;
+    position: relative;
+    height: 250px; */
+}
+}
+
+@media (min-width: 768px){
+    .PersonalInformation{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsdSYcqDoFp47qaRuE6NQqrVpXwqFKagaskQ&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    /* float: left;
+    width: 33%;
+    flex-direction: column;
+    position: relative;
+    height: 250px; */
+}
+}
+
+/*EFECTS*/
+.PersonalInformation:hover{
+    opacity: 0.8;
+    transition: 2s;
+    transform: rotate(180deg);
+}
+
+.studies:hover{
+    opacity: 0.7;
+    transition: 1.5s;
+    transform: scale(2);
+}
+
+.experience:hover{
+    opacity: 0.6;
+    transition: 2s;
+    transform: translate(50px,10px);
+}
+
+.imagenflotada{
+    margin-top: 10%;
+    /* float: left; */
+}
+
+.card{
+    border: 2px solid black;
+}
+
+/*
+
+EXERCISE 1
+
+A: 
+position: absolute entorno al div
+
+B:
+position: absolute
+position: fixed
+
+
+C:
+position: fixed
+
+
+D:
+absolute/fixed
+
+E:
+position: static
+
+
+F:
+position: relative
+
+
+G:
+position: absolute
+
+H:
+position: relative
+position: absolute
+
+
+I:
+position: relative
+/*
+
+EXERCISE 2
+
+
+
+*/

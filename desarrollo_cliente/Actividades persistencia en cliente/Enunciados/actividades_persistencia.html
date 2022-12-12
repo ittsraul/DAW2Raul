@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Desarrollo Web Entorno Cliente</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/noscript.css" />
+</head>
+
+<body class="is-preload">
+
+    <!-- Sidebar -->
+    <section id="sidebar">
+        <div class="inner">
+            <nav>
+                <ul>
+                    <li><a href="#one">Ejercicio - 1</a></li>
+                    <li><a href="#two">Ejercicio - 2</a></li>
+                    <li><a href="#three">Ejercicio - 3</a></li>
+                    <li><a href="#four">Ejercicio - 4</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Intro -->
+        <section id="intro" class="wrapper style1 fullscreen spotlights">
+            <div class="content">
+                <div class="inner2">
+                    <h1>Actividades persistencia en cliente</h1>
+                    <p>Objetivos: Aprender a almacenar datos en el navegador con JavaScript.</p>
+                    <p>Duración estimada: 3 horas.</p>
+                    <p>Recursos:</p>
+                    <p>• <u style="font-weight: bold;"><a href="https://www.w3schools.com/"
+                                target="_blank">W3schools</a></u></p>
+                    <p>• <u style="font-weight: bold;"><a href="https://developer.mozilla.org/es/docs/Web/JavaScript"
+                                target="_blank">MDN</a></u></p>
+                    <p>• <u style="font-weight: bold;"><a href="https://devdocs.io/" target="_blank">DevDocs</a></u></p>
+
+                    <ul class="actions">
+                        <li><a href="#contenidos" class="button">Continuar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- One -->
+        <section id="one" class="wrapper style2 fullscreen spotlights">
+            <section>
+                <div class="content">
+                    <div class="inner">
+                        <h2>Ejercicio 1:</h2>
+                        <h3>Ejercicios para realizar en Local Storage / Session Storage:</h3>
+                        <div class="table-wrapper">
+                            <p>
+                                Realiza un script para que cuando el usuario pulse el botón “Guardar datos”, se
+                                almacenen en el navegador los datos introducidos. Cuando pulse “Mostrar datos”,
+                                realizará una búsqueda del usuario cuyo DNI se indique y se mostrarán los datos 
+                                de dicho usuario guardados. Cuando pulse “Borrar registro”,
+                                borrará el usuario con el DNI indicado. Si se pulsa “Borrar todos los registros”, se
+                                borrarán todos los registros guardados.
+                            </p>
+                            <div id="formDiv">
+                                <form id="formulario">
+                                    <h3>Datos personales</h3>
+                                    <input type="text" id="nombre" placeholder="Nombre" required autofocus><br>
+                                    <input type="text" id="primer_apellido" placeholder="Primer Apellido" required><br>
+                                    <input type="text" id="segundo_apellido" placeholder="Segundo Apellido"
+                                        required><br>
+                                    <input type="text" id="dni" placeholder="DNI" required><br>
+                                    <button type="submit">Guardar datos</button>
+                                </form>
+                                <br>
+                                <label for="devolverDatos">Indica DNI para ver datos usuario</label>
+                                <input type="text" id="devolverDatos" placeholder="Ver usuario" required><br>
+                                <button id="botonMostrar">Mostrar datos</button>
+                                <br>
+                                <div id="devolver"></div>
+                                <br>
+                                <label for="borrarRegistro">Indica DNI para borrar registro</label>
+                                <input type="text" id="borrarRegistro" placeholder="Borrar registro" required><br>
+                                <button id="botonBorrarRegistro">Borrar registro</button>
+                                <button id="botonBorrarTodos">Borrar todos los registros</button>
+
+                            </div>
+                        </div>
+            </section>
+        </section>
+
+        <!-- Two -->
+        <section id="two" class="wrapper style2 fullscreen spotlights">
+            <section>
+                <div class="content">
+                    <div class="inner">
+                        <h2>Ejercicio 2:</h2>
+                        <h3>Ejercicios para realizar en Local Storage / Session Storage:</h3>
+                        <div class="table-wrapper">
+                            <p id="paragraph">
+                                Realiza un script para que cuando se busque un usuario guardado en el navegador, el
+                                color de estas letras pase a ser del color guardado para ese usuario.
+                            </p>
+                            <div id="formDiv">
+                                <form id="formulario2">
+                                    <input type="text" id="nombre2" placeholder="Nombre" required autofocus><br>
+                                    <input type="text" id="primer_apellido2" placeholder="Primer Apellido" required><br>
+                                    <input type="text" id="segundo_apellido2" placeholder="Segundo Apellido"
+                                        required><br>
+                                    <input type="text" id="dni2" placeholder="DNI" required><br>
+                                    <select id="color2">
+                                        <option value="1" selected>lightgrey</option>
+                                        <option value="2">green</option>
+                                        <option value="3">beige</option>
+                                        <option value="4">yellow</option>
+                                        <option value="5">salmon</option>
+                                        <option value="6">red</option>
+                                    </select>
+                                    <br>
+                                    <button type="submit">Guardar datos</button>
+                                </form>
+                                <br>
+                                <label for="devolverDatos">Indica dni para ver datos usuario</label>
+                                <input type="text" id="devolverDatos2" placeholder="Ver usuario" required><br>
+                                <button id="botonMostrar2">Mostrar datos</button>
+                                <br>
+                                <div id="devolver2"></div>
+                                <br>
+                                <label for="borrarRegistro">Indica dni para borrar registro</label>
+                                <input type="text" id="borrarRegistro2" placeholder="Borrar registro" required><br>
+                                <button id="botonBorrarRegistro2">Borrar registro</button>
+                                <button id="botonBorrarTodos2">Borrar todos los registros</button>
+                            </div>
+            </section>
+        </section>
+
+        <!-- Three -->
+        <section id="three" class="wrapper style2 fullscreen spotlights">
+            <section>
+                <div class="content">
+                    <div class="inner">
+                        <h2>Ejercicio 3:</h2>
+                        <h3>Ejercicios para realizar en Local Storage / Session Storage:</h3>
+                        <div class="table-wrapper">
+                            <p>
+                                Modifica el script del ejercicio anterior y vincúlalo a la clase Usuario realizada en el
+                                último bloque de ejercicios,
+                                de modo que valides a partir de ella los campos del formulario y se genere
+                                automáticamente un nombre de usuario y una contraseña con los datos introducidos.
+                            </p>
+                            <div id="formDiv3">
+                                <form id="formulario3">
+                                    <input type="text" id="nombre3" placeholder="Nombre" required autofocus><br>
+                                    <input type="text" id="primer_apellido3" placeholder="Primer Apellido" required><br>
+                                    <input type="text" id="segundo_apellido3" placeholder="Segundo Apellido"
+                                        required><br>
+                                    <input type="text" id="dni3" placeholder="DNI" required><br>
+                                    <br>
+                                    <button type="submit">Guardar datos</button>
+                                </form>
+                                <br>
+                                <label for="devolverDatos">Indica dni para ver datos usuario</label>
+                                <input type="text" id="devolverDatos3" placeholder="Ver usuario" required><br>
+                                <button id="botonMostrar3">Mostrar datos</button>
+                                <br>
+                                <div id="devolver"></div>
+                                <br>
+                                <label for="borrarRegistro">Indica dni para borrar registro</label>
+                                <input type="text" id="borrarRegistro3" placeholder="Borrar registro" required><br>
+                                <button id="botonBorrarRegistro3">Borrar registro</button>
+                                <button id="botonBorrarTodos3">Borrar todos los registros</button>
+                            </div>
+            </section>
+        </section>
+
+        <!-- Four -->
+        <section id="four" class="wrapper style2 fullscreen spotlights">
+            <section>
+                <div class="content">
+                    <div class="inner">
+                        <h2>Ejercicio 4:</h2>
+                        <h3>Ejercicios para realizar en Local Storage / Session Storage:</h3>
+                        <div class="table-wrapper">
+                            <p>
+                                Realizar un script para que en el archivo monumentos.html proporcionado, al pulsar 
+                                sobre el botón “Añadir monumento”, se guarde en el navegador el nombre del 
+                                monumento, el país donde está ubicado y una URL donde se encuentra una imagen del 
+                                monumento. 
+                                En el buscador de monumentos al escribir el nombre del documento y pulsar “Mostrar 
+                                datos”, se añadirán debajo el nombre y el país del monumento. Al pulsar “Borrar 
+                                monumento” se borrará el registro del monumento y, al pulsar ”Borrar todos”, se 
+                                borrarán todos los datos guardados en el navegador.
+                            </p>
+            </section>
+        </section>
+
+
+
+    </div>
+
+<script src="ejercicio3.js"></script>
+</body>
+
+</html>

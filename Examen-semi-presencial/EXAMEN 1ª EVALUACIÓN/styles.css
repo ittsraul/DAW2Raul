@@ -1,0 +1,70 @@
+body {
+    background-color: #efefef;
+    font-family: Arial;
+    color: #333;
+    line-height: 1.4em;
+}
+
+main {
+    width: 800px;
+    margin:auto;
+    background-color:#FFF;
+    padding:20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+aside {
+    width: 250px;
+}
+
+.imagenes{
+    width: 800px;
+    margin:auto;
+    background-color:#FFF;
+    padding:20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+article {
+    width:525px;
+    height: 600px;
+}
+
+h1 {
+    height: 400px;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Breaking_Bad_logo.svg/1200px-Breaking_Bad_logo.svg.png") no-repeat;
+    background-size: 525px 400px;
+    line-height: 150px;
+    text-align: center;
+    color: red;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p { height: 120px; }
+
+.esconder-menu {
+    display: none;
+}
+
+.mostrar-menu {
+    display: block;
+}
+
+label {
+    display: block;
+    margin-bottom: .5em;
+}
+
+input, textarea, #formulario_monumentos button, #ver_monumentos button{
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    border: 1px solid #666;
+    padding: 10px;
+    box-sizing: border-box;
+}

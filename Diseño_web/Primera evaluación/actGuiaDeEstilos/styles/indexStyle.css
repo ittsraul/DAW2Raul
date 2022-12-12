@@ -1,0 +1,290 @@
+:root{
+    --colorfooter: #494343;
+    --darkblue: #1d1e30;
+    --midblue: #3ba1c6;
+    --lightblue: #84bfd4 ;
+    --white: #fff;
+    --black: #000;
+}
+
+
+/*textos importantes*/
+@font-face{
+    font-family: norwester2;
+    src: url("./../fonts/norwester.otf");
+}
+ 
+/* texto corriente*/
+@font-face{
+    font-family: montserrat;
+    src: url("./../fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+/* textos a resaltar */
+@font-face{
+    font-family: rubik;
+    src: url("./../fonts/Rubik-VariableFont_wght.ttf");
+}
+
+/* por si falla alguna fuente */
+@font-face{
+    font-family: italicrubik;
+    src: url("./../fonts/Rubik-Italic-VariableFont_wght.ttf");
+}
+
+header{
+    background-color: var(--darkblue);
+    color: white;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 30px;
+}
+header img{
+    float: left;
+    margin-left: 300px;
+}
+header h1{
+    font-family: "norwester2";
+    margin-left: 800px;
+    font-size: 36px;
+}
+
+header span{
+    font-size: 18px;
+}
+
+body{
+    overflow: scroll;
+}
+.navBar{
+    display: inline;
+    float: left;
+    background-color: var(--midblue);
+    width: 100%;
+    height: 150px;
+}
+
+.navBar img{
+    margin-top: 25px;
+    margin-left: 300px;
+    height: 80px;
+    width: 80px;
+    gap: 2%;
+    border-radius: 50%;
+}
+
+.navBar a:hover{
+    opacity: 0.7;
+    transition: 1.5s;
+    transform: scale(1.2);
+}
+
+.navBar a:visited{
+    color: var(--white);
+}
+
+.navBar a:link{
+    transform: scale(1.3);
+}
+
+.navBar a:active{
+    transform: rotate(45deg);
+}
+
+main{
+    max-width: 120rem;
+    overflow: scroll;
+}
+
+.historia{
+    margin-top: 200px;
+    margin-bottom: 150px;
+    background-color: var(--lightblue);
+}
+
+.historia h2{
+    font-size: 24px;
+    font-family: "norwester2";
+    text-align: center;
+    background-color: var(--lightblue);
+    color: var(--black);
+}
+
+.historia img{
+    float: left;
+    margin-left: 250px;
+    margin-right: 250px;
+    border: 2px solid black;
+    width: 270px;
+    height: 80px;
+}
+
+.historia p{
+    font-size: 16px;
+    font-family: "rubik";
+    float: left;
+    font-size: 20px;
+}
+
+.services{
+    margin-bottom: 100px;
+    background-color: var(--lightblue);
+}
+
+.services h2{
+    font-size: 24px;
+    font-family: "norwester2";
+    text-align: center;
+    background-color: var(--lightblue);
+    color: var(--black);
+}
+
+.icons-home:hover{
+    opacity: 0.7;
+    transition: 1.5s;
+    transform: scale(1.2);
+}
+
+.icons-venta:hover{
+    opacity: 0.7;
+    transition: 1.5s;
+    transform: scale(1.2);
+}
+.icons-alquiler:hover{
+    opacity: 0.7;
+    transition: 1.5s;
+    transform: scale(1.2);
+}
+.icons-reparacion:hover{
+    opacity: 0.7;
+    transition: 1.5s;
+    transform: scale(1.2);
+}
+
+.card{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.card h2{
+    font-size: 24px;
+    width: 100%;
+}
+.card-venta{
+    float: left;
+    width: 520px;
+    border-radius: 25%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    height: 300px;
+    text-align: center;
+    background-image: url("./../img/ventacoche.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+.card-venta a{
+    font-family: "montserrat";
+    font-size: 25px;
+    background-color: var(--lightblue);
+    color: var(--black);
+}
+
+.card-venta:hover{
+    transition: 2s;
+    transform: scale(1.3);
+}
+
+.card-venta:visited{
+    background-color: var(--black);
+    color: var(--midblue);
+}
+
+.card-alquiler{
+    float: left;
+    width: 520px;
+    border-radius: 25%;
+    margin-bottom: 100px;
+    margin-right: 50px;
+    height: 300px;
+    text-align: center;
+    background-image: url("./../img/alquiler.png");
+    background-size: cover;
+    
+}
+
+.card-alquiler:hover{
+    transition: 2s;
+    transform: scale(1.3);
+}
+
+.card-alquiler a:visited{
+    opacity: 0.8;
+}
+
+.card-alquiler a:active{
+    color: green;
+}
+
+.card-alquiler a:link{
+    background-color: var(--white);
+}
+
+.card-alquiler a{
+    font-family: "montserrat";
+    font-size: 25px;
+    background-color: var(--lightblue);
+    color: var(--black);
+}
+
+.card-reparacion{
+    float: left;
+    width: 520px;
+    border-radius: 25%;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    height: 300px;
+    text-align: center;
+    background-image: url("./../img/reparaciones.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-reparacion:hover{
+    transition: 2s;
+    transform: scale(1.3);
+}
+
+.card-reparacion a{
+    font-family: "montserrat";
+    font-size: 25px;
+    background-color: var(--lightblue);
+    color: var(--black);
+}
+
+/* style for  */
+/* footer style's */
+
+
+
+
+footer{
+    display: block;
+    font-family: "rubik";
+    position: static; 
+    width: 100%;
+    padding: 90px;
+    color: var(--white);
+    text-align: center;
+    background-color: var(--darkblue);
+    clear: both;
+}
+
+
+footer img{
+    float: right;
+    margin-right: 400px;
+    margin-bottom: 50px;
+}

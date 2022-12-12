@@ -1,0 +1,224 @@
+:root{
+    --darkblue: #1d1e30;
+    --midblue: #3ba1c6;
+    --lightblue: #84bfd4 ;
+    --white: #fff;
+    --black: #000;
+    --secondarydark: #fe9143;
+}
+
+header{
+    background-color: var(--darkblue);
+    color: white;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 30px;
+}
+
+/*textos importantes*/
+@font-face{
+    font-family: norwester2;
+    src: url("./../fonts/norwester.otf");
+}
+ 
+/* texto corriente*/
+@font-face{
+    font-family: montserrat;
+    src: url("./../fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+/* textos a resaltar */
+@font-face{
+    font-family: rubik;
+    src: url("./../fonts/Rubik-VariableFont_wght.ttf");
+}
+
+/* por si falla alguna fuente */
+@font-face{
+    font-family: italicrubik;
+    src: url("./../fonts/Rubik-Italic-VariableFont_wght.ttf");
+}
+
+
+header img{
+    float: left;
+    margin-left: 300px;
+}
+
+header h1{
+    font-size: 36px;
+    font-family: "norwester2";
+    margin-left: 800px;
+    font-size: 36px;
+}
+
+header span{
+    font-size: 18px;
+}
+
+.navBar{
+    background-color: var(--midblue);
+    width: 100%;
+    height: 150px;
+}
+
+body{
+    overflow: scroll;
+}
+
+.navBar img{
+    margin-top: 25px;
+    margin-left: 500px;
+    height: 80px;
+    width: 80px;
+    gap: 2%;
+    border-radius: 50%;
+}
+
+.navBar input{
+   
+    margin-left: 300px;
+}
+
+
+.services{
+    font-family: "rubik";
+    width: 100%;
+    height: 250px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: var(--lightblue);
+}
+.services article{
+    float: left;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 40%;
+} 
+
+.services aside{
+    float: right;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 20%;
+ }
+article h2{
+    font-size: 24px;
+    font-family: "norwester2";
+    background-color: var(--lightblue);
+    color: var(--black);
+}
+ article p{
+    font-size: 16px;
+    font-family: "rubik";
+    margin-left: 10px;
+    color: var(--black);
+ }
+
+ aside img{
+    margin-right: 20px;
+    width: 200px;
+ }
+
+
+ .icons-home:hover{
+    opacity: 0.7;
+    transition: 1.5s;
+    transform: scale(1.2);
+}
+
+fieldset{
+    background-color: var(--midblue);
+}
+.fields{
+    margin-bottom: 1rem;
+}
+
+.fields p{
+    font-size: 16px;
+    color: var(--white);
+}
+.fields textarea{
+    height: 20rem;
+}
+.fields label{
+    color: var(--white);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.input-text{
+    width: 80%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.formContact{
+    background-image: url("./../img/fondoazul.jpeg");
+    width: min( 60rem, 100%);
+    margin-left: 300px;
+    margin-bottom: 100px;
+    padding: 2rem;
+    border-radius: 5%;
+    background-attachment: fixed;
+}
+
+.formContact fieldset{
+    border: none;
+}
+
+.formContact legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: var(--white);
+}
+.button-connect:hover{
+    cursor: pointer;
+}
+
+
+.h2text{
+    font-family: "rubik";
+    margin-left: 400px;
+    background-color: var(--darkblue);
+    color: var(--white);
+}
+
+.send .button-connect{
+    width: 100%;
+    
+}
+
+.h2text{
+    margin-left: 400px;
+    background-color: var(--darkblue);
+    color: var(--white);
+}
+
+.buttoncolor{
+    background-color: var(--secondarydark);
+}
+
+footer{
+    display: block;
+    font-family: "rubik";
+    position: static; 
+    width: 100%;
+    padding: 90px;
+    color: var(--white);
+    text-align: center;
+    background-color: var(--darkblue);
+    clear: both;
+}
+
+
+footer img{
+    float: right;
+    margin-right: 400px;
+    margin-bottom: 50px;
+}

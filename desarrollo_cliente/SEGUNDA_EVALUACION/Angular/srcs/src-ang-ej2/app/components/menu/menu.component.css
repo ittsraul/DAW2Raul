@@ -1,0 +1,14 @@
+aside {
+    width: 250px;
+}
+.esconder-menu {
+    display: none;
+}
+
+.aparecer-menu{
+    display: visible;
+}
+
+ul {
+    list-style-type: none;
+}

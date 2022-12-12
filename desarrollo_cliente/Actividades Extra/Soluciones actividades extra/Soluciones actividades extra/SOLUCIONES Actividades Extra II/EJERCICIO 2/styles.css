@@ -1,0 +1,13 @@
+.uno {
+    width:100px;
+    height:100px;
+    background-image: url("https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/large_jpg/eiffel-tower-in-paris-151-medium.jpg?1564742900");
+    transition: all 2s;
+}
+
+.dos {
+    background-image: url("https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/large_jpg/eiffel-tower-in-paris-151-medium.jpg?1564742900");
+    width:500px;
+    height:500px;
+    transition: all 2s;
+}

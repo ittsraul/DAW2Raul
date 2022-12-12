@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #efefef;
+    font-family: Arial;
+    color: lightgrey;
+    line-height: 1.4em;
+}
+
+main {
+    width: 800px;
+    margin:auto;
+    background-color:#FFF;
+    padding:20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+

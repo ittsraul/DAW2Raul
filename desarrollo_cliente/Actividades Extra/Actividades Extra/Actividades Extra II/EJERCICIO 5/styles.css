@@ -1,0 +1,45 @@
+
+	body { 
+        padding:50px; 
+        margin:0; 
+    }
+
+	#caja1 { 
+        background-image: url("./images/img1.png");
+		width:256px; 
+		height:256px;  
+		padding:0px;
+		color:#fff; 
+		position: relative;
+		left: 0px;
+	}
+
+    #caja2 { 
+        background-image: url("./images/img2.png");
+		width:256px; 
+		height:256px; 
+		padding:0px;
+		color:#fff; 
+		position: relative;
+		left: 0px;
+	}
+
+    #caja3 { 
+        background-image: url("./images/img3.png");
+		width:256px; 
+		height:256px; 
+		padding:0px;
+		color:#fff; 
+		position: relative;
+		left: 0px;
+	}
+
+	#caja4 { 
+        background-image: url("./images/img4.png");
+		width:256px; 
+		height:256px; 
+		padding:0px;
+		color:#fff; 
+		position: relative;
+		left: 0px;
+	}

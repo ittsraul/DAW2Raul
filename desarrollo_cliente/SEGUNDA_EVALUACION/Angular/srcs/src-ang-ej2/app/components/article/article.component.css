@@ -1,0 +1,14 @@
+
+article {
+    width:525px;
+    height: 550px;
+}
+
+.Museo {
+    height: 400px;
+    line-height: 150px;
+    background-image: url("https://www.lovevalencia.com/wp-content/uploads/2010/10/ciudad.jpg");
+    text-align: center;
+    color: #fff;
+}
+

@@ -1,0 +1,35 @@
+<div *ngIf="paragraphs; else elseBlock">
+  <div class="lorem">
+    <div class="lorem-img">
+      <img src="https://centmillemilliards.com/wp/wp-content/uploads/2013/02/images_Lorem-Ipsum-editions-cent-mille-milliards.jpg" width="250px">
+    </div>
+
+    <div class="lorem-description">
+      <ul>
+        <li>
+          <h2 (click)="onClick()">Dolor</h2>
+        </li>
+        <li>
+          <h3>Maecenas quis orci vehicula, sodales urna tincidunt, volutpat enim.</h3>
+        </li>
+        <li>
+          <p>Vestibulum interdum imperdiet dui, eu finibus felis facilisis sit amet. Fusce dolor turpis, 
+            finibus nec iaculis vel, posuere quis nulla. Ut lobortis sit amet eros eget volutpat. Vestibulum egestas 
+            convallis massa, ac tincidunt ex pharetra sit amet. Etiam imperdiet molestie lorem, non ultrices quam 
+            euismod sed. Sed ornare tempus tortor, nec auctor nibh. Nulla finibus nulla quis pellentesque viverra. 
+            Morbi pharetra felis vel dictum sodales. Nullam consequat nisl vitae egestas pellentesque.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="ipsum">
+      <a href="#">Lorem ipsum</a>
+    </div>
+  </div>
+
+</div>
+<ng-template #elseBlock>
+  <h2 [ngStyle]="{'color': color}">Fabela</h2>
+  <p >infweudgrnfeznsenh</p>
+</ng-template>
+    

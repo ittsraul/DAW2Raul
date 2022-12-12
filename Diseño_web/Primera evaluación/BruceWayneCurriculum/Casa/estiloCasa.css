@@ -1,0 +1,39 @@
+#techo{
+    width: 20em;
+    height: 2em;
+    background-color: red;
+    border: 3px solid black;
+    position: center;
+}
+
+#puerta{
+    margin-left: 10pt;
+    margin-right: 10pt;
+    width: 1em;
+    height: 2em;
+    padding: 5px;
+    background-color: rgb(103, 31, 31);
+    border: 3px solid black;
+}
+
+#ventana{
+    border: 3px solid black;
+    background-color: blue;
+}
+
+#ventana2{
+    border: 3px solid black;
+    background-color: blue;
+}
+
+#casa{
+    background-color: grey;
+    border: 3px solid black;
+}
+
+#contenido{
+    width: 700px;
+    margin: auto;
+    border: solid 1px black;
+    background-color: #CCC;
+}

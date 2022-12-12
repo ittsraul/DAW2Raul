@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persistencia en Cliente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Grandes monumentos</h1>
+    </header>
+    <main>
+        <form id="formulario_monumentos">
+            <label for="monumento">Monumento</label>
+            <input type="text" id="monumento" placeholder="Indica el nombre del monumento" required>
+
+            <label for="pais">Pais</label>
+            <input type="text" id="pais" placeholder="Pais" required>
+
+            <label for="foto">Foto</label>
+            <input type="url" id="foto" placeholder="Indica la URL de la foto">
+
+            <button type="submit">Añadir a la lista</button>
+        </form>
+        <article>
+            <h2 id="titulo">Buscador de monumentos</h2>
+            <div id="contenedor_monumentos">
+                <div class="card">
+                    <img id="imagen" src="https://dbdzm869oupei.cloudfront.net/img/quadres/preview/40446.png" alt="titulo monumento"> 
+                        <div>
+                            <label for="devolverDatos" >Indica monumento para ver detalles</label>
+                            <input type="text" id="verDatos" placeholder="Nombre monumento" required><br>
+                            <button id="botonMostrar">Mostrar datos</button>
+                            <button id="botonBorrarMonumento">Borrar Monumento</button>
+                            <br><br>
+                            <button id="botonBorrarTodos">Borrar Todos</button>
+                            <br><br>
+                            <h3 id="titulo_monumento"></h3>
+                            <h4 id="pais_monumento"></h4>
+                        </div>
+                </div>               
+            </div>
+        </article>
+    </main>
+    <script src="ejercicio4.js"></script>
+</body>
+
+</html>

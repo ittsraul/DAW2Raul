@@ -1,0 +1,16 @@
+.jumbotron{
+    background-image: url("https://t.ctcdn.com.br/Y1DLedp7dc9m6IevkMya22suSR8=/53x50:1028x599/512x288/smart/filters:format(webp)/i361749.png");
+    height: 200px;
+    background-position: bottom center;
+}
+
+h1{
+    color:#ffffff;
+    font-family: 'Ruda', sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    margin: 0px;
+    padding-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}

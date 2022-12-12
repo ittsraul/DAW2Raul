@@ -1,0 +1,9 @@
+{
+    "name": "daw2_raulsales/ap2-mve",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "app\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,21 @@
+
+body { padding-top: 100px; }
+
+.uno {
+	width:100px;
+	height:100px;
+	background-image:url("https://s.yimg.com/iu/api/res/1.2/FBMDVofPn1MKevzsnNcgxA--~B/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7cT0xMDA7aD0xMjg7dz0xMjg-/https://s.yimg.com/cv/apiv2/default/nba/20181212/500x500/bulls_wbgs.png");
+	background-repeat: no-repeat;
+    border-radius:50%;
+	margin:auto;
+	transition: all 2s;
+}
+
+.dos {
+	width:500px;
+	height:500px;
+	background-image: url("https://img.olympicchannel.com/images/image/private/t_1-1_600/f_auto/v1538355600/primary/ovfsumgucccbmte6jtor");
+	border-radius:50%;
+	margin:auto;
+	transition: all 2s;
+}

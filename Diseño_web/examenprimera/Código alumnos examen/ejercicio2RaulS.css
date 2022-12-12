@@ -1,0 +1,22 @@
+.navBar{
+    margin-left: 35px;
+}
+
+.navBar a:hover{
+    color: #FFF;
+    background-color: red;
+}
+
+.navBar a:active{
+    color: orange;
+}
+
+.navBar a:visited{
+    color: darkgreen;
+}
+
+.navBar a:link{
+    color: blue;
+    text-decoration: underline;
+}
+
