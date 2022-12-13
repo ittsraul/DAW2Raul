@@ -1,3 +1,10 @@
+
+//Call the dinamic function
+dinamicDiv();
+
+//Api
+breakingBad();
+
 let tabla = document.getElementsByClassName("table-wrapper")[0];
 
 //Create the funtion for make the dinamic content of  breaking bad
@@ -13,36 +20,27 @@ function dinamicDiv() {
     let despues = document.createElement("button");
     tabla.appendChild(despues);
     antes.innerHTML = "anterior";
+    tabla.appendChild(antes)
     despues.innerHTML = "despues";
+    tabla.appendChild(despues)
 }
 
-//Call the dinamic function
-dinamicDiv();
-
-//Array with content of the api info
-let ArrayContainer = [];
 
 //Peticion a la api publica
-async function breakingBad(ArrayContainer) {
-    const endpoint = "https://www.breakingbadapi.com/api/characters";
+async function breakingBad() {
     try {
-        const response = await fetch(endpoint, { cache: 'no-cache' });
-        if (response.ok) {
-            const jsonResponse = await response.json();
-            ArrayContainer = jsonResponse;
-            console.log(ArrayContainer);
-        } 
-        for (let i = 0; i < ArrayContainer.length; i++) {
-            p.innerHTML= 
-        }
+        let response = await axios.get("https://www.breakingbadapi.com/api/characters");
+        showElems(response.data);
+        maxElems = response.data.length - 1;
+        buttons();
     }
     catch (error) {
-        console.log("Errorrrrrr");
+        console.error("error");
     };
 }
 
+function buttons(){
 
-//funcion de la api
- breakingBad();
+}
 
 
