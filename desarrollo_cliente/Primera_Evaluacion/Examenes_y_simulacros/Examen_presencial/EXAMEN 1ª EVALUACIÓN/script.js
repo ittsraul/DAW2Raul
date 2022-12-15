@@ -1,8 +1,6 @@
 //CambiaVisibilidad();
 Api();
 
-//CambiaVisibilidad
-//function CambiaVisibilidad() {
 let p1 = document.getElementById("parrafoUno")
 let p1Content = p1.innerHTML;
 let p2 = document.getElementById("parrafoDos");
@@ -12,7 +10,6 @@ let p4 = document.getElementById("parrafoCuatro");
 p2.style.visibility = "hidden";
 p3.style.visibility = "hidden";
 p4.style.visibility = "hidden";
-//}
 
 //Array Contenedor
 let container = [];
@@ -54,7 +51,6 @@ async function Api() {
           imagen.innerHTML = container[3].name;
           p1.innerHTML = p4.innerHTML;
         })
-
       });
     });
   imagen.addEventListener("mouseout", () => {

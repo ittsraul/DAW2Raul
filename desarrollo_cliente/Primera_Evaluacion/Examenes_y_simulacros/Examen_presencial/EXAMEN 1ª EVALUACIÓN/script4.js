@@ -25,17 +25,12 @@ enviar.addEventListener("submit", (e) => {
 let enviar2 = document.getElementsByTagName("form")[1];
 enviar2.addEventListener("submit", (e) => {
     e.preventDefault();
-    /* let series = document.getElementById("series");
-    let item = window.localStorage.getItem(series.value);
-    let foto = document.getElementById("foto");
-    oto.src = item; */
     let container = [];
     let keys = Object.keys(localStorage);
     for (let i = 0; i < keys.length; i++) {
         container.push(window.localStorage.getItem(keys[i]));
     }
      console.log(container);
-    
 });
 
 

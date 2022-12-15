@@ -4,9 +4,8 @@ anyadirALaLista.addEventListener("submit", (e) => {
   e.preventDefault();
   let serie = document.getElementsByTagName("input")[0].value;
   let foto = document.getElementsByTagName("input")[1].value;
-  window.localStorage.setItem(serie, foto)
+  window.localStorage.setItem(serie, foto);
 });
-
 
 console.log(foto.value);
 let VerSeries = document.getElementsByTagName("button")[1];
@@ -28,19 +27,36 @@ VerSeries.addEventListener("click", (e) => {
   let despues = document.createElement("button");
   Cuerpo.appendChild(despues);
   antes.innerHTML = "anterior";
-  Cuerpo.appendChild(antes)
+  Cuerpo.appendChild(antes);
   despues.innerHTML = "despues";
   Cuerpo.appendChild(despues);
-  /* antes.addEventListener("click", () => {
+  let container = [];
+  let keys = Object.keys(localStorage);
+  console.log(keys);
+  for (let i = 0; i < keys.length; i++) {
+    container.push(window.localStorage.getItem(keys[i]));
+    /* p.innerHTML = container; */
+  }
+  
+  let contador= 0;
+  p.innerHTML = keys[contador];
+  imagen.style.background = "url(" + container[contador] + ") no-repeat"; ;
+  antes.addEventListener("click", () => {
+    contador--;
+    if (contador < 0) {
+      contador = keys.length - 1;
+    }
+    p.innerHTML = keys[contador];
+    imagen.style.background = "url(" + container[contador] + ") no-repeat"; 
+  });
 
-    p.innerHTML = window.localStorage.getItem();
-  })
   
   despues.addEventListener("click", () => {
-    p.innerHTML = "";
-  }) */
-})
-
-
-
-
+    contador++;
+    if (contador > keys.length - 1) {
+      contador = 0;
+    }
+    p.innerHTML = keys[contador];
+    imagen.style.background = "url(" + container[contador] + ") no-repeat"; 
+  }); 
+});
