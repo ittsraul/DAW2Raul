@@ -1,0 +1,89 @@
+
+:root {
+    --backcolor: white;
+    --darkviolet: #6563ff;
+    --ocasionalviolet: #7b7aff;
+    --midviolet: #b2b1ff;
+    --lightblue: #d8d8ff;
+    --whitecolor: #ffffff;
+    --blackcolor: #000000;
+}
+
+header{
+    background-color: #d8d8ff;
+}
+
+header img{
+    width: 44px;
+    height: 43px;
+}
+
+#wave1{
+    position: absolute;
+    width: 146px;
+    height: 43px;
+    background: var(--whitecolor);
+    border-radius: 8px 20px 20px 0px;;
+}
+
+#waveBlack1{
+    position: absolute;
+    width: 146px;
+    height: 43px;
+    background: var(--blackcolor);
+    border-radius: 20px;
+}
+
+#wave2{
+    position: absolute;
+    width: 146px;
+    height: 43px;
+    background: var(--whitecolor);
+    border-radius: 20px;
+}
+
+#waveBlack2{
+    position: absolute;
+    width: 88px;
+    height: 43px;
+    background: var(--blackcolor);
+    border-radius: 8px 20px 20px 0px;
+}
+
+.menu_hamburguesa{
+    background-color: #7b7aff;
+    border-right: var(--whitecolor);
+    /* height: 100%; */
+    overflow: hidden;
+    /* width: 60px; */
+}
+
+.menu_hamburguesa img{
+    width: 44px;
+    height: 43px;
+}
+
+.jumbotron{
+    background: url("./../img/image_jumbo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.jumbotron button{
+    text-align: center;
+    background-color: var(--darkviolet);
+}
+
+.footer{
+    margin-top: 30px;
+    background-color: var(--darkviolet);
+    color: var(--blackcolor);
+    clear: both;
+}
+
+.footer img{
+    width: 44px;
+    height: 43px;
+}
+
