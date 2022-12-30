@@ -1,13 +1,6 @@
-CREATE DATABASE IF NOT EXISTS 'AEVDESP';
+CREATE TABLE `AEV` (
+    `name` VARCHAR(255) NOT NULL,
+    `surname` VARCHAR(255),
+);
 
-USE 'AEVDESP';
-
-CREATE TABLE 'AEV' (
-    'name' VARCHAR(255) NOT NULL,
-    'surname' VARCHAR(255),
-)
-
-INSERT INTO 'AEV'(
-    'name',
-    'surname'
-) VALUES ('MiNombre','MiApellido')
+INSERT INTO `AEV` (`name`,`surname`) VALUES ('raul','sales'), ('pedrosanchez','kowalski');

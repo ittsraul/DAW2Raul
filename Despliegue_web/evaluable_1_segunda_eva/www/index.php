@@ -12,7 +12,6 @@
                  echo "<h1>¡Hola, Raul Sales te da la bienvenida!</h1>";
 
                 $conn = mysqli_connect('db', 'raul', 'toor', "AEVDESP");
-
                 $query = 'SELECT * From AEV';
                 $result = mysqli_query($conn, $query);
 
@@ -24,11 +23,10 @@
                     foreach($value as $element){
                         echo '<td>' . $element . '</td>';
                     }
-
                     echo '</tr>';
-                
+                 }
                 echo '</table>';
-
+               
                 $result->close();
                 mysqli_close($conn); 
             ?>
