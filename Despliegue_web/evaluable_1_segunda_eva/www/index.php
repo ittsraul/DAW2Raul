@@ -1,13 +1,37 @@
-<?php
-     try {
-    //almacenamos la información de la conexión en variables
-     $servername = "localhost";
-     $username = "AEVDESP";
-     $password = "raul";
-     $db = "contener";
-         $conn = new PDO("mysql:host=$servername;dbname=$db", $username, $password);
-         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-     } catch (PDOException $e) {
-         echo 'Connection has failed: ' . $e->getMessage();
-     }
-?>
+
+<html>
+    <head>
+        <title>Welcome to LAMP Infrastructure</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <?php
+                 echo "<h1>¡Hola, Raul Sales te da la bienvenida!</h1>";
+
+                $conn = mysqli_connect('db', 'raul', 'toor', "AEVDESP");
+
+                $query = 'SELECT * From AEV';
+                $result = mysqli_query($conn, $query);
+
+                echo '<table class="table table-striped">';
+                echo '<thead><tr><th></th><th>id</th><th>name</th></tr></thead>';
+                while($value = $result->fetch_array(MYSQLI_ASSOC)){
+                    echo '<tr>';
+                    echo '<td><a href="#"><span class="glyphicon glyphicon-search"></span></a></td>';
+                    foreach($value as $element){
+                        echo '<td>' . $element . '</td>';
+                    }
+
+                    echo '</tr>';
+                
+                echo '</table>';
+
+                $result->close();
+                mysqli_close($conn); 
+            ?>
+        </div>
+    </body>
+</html> 

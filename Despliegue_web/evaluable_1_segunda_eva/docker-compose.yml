@@ -9,10 +9,10 @@ services:
       #Variables de entorno
       environment:
          MYSQL_DATABASE: AEVDESP
-         MYSQL_PASSWORD: raul
-         MYSQL_ROOT_PASSWORD:  toor
+         MYSQL_PASSWORD: toor
+         MYSQL_ROOT_PASSWORD: toor
       volumes:
-         - ./db/:/docker-entrypoint-initdb.d
+         - ./db:/docker-entrypoint-initdb.d
       networks:
          - default
    www:
@@ -20,7 +20,7 @@ services:
       ports: 
          - "80:80"
       volumes:
-         - .\www\:/docker-entrypoint-initdb.d
+         - ./www:/var/www/html
       links:
          - db
       networks:
@@ -32,6 +32,6 @@ services:
       ports:
          - "8000:80"
       environment:
-         MYSQL_USER: AEVDESP
-         MYSQL_PASSWORD: raul
+         MYSQL_USER: raul
+         MYSQL_PASSWORD: toor
          MYSQL_ROOT_PASSWORD: toor
