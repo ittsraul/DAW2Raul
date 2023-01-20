@@ -1,0 +1,128 @@
+:root {
+    --backcolor: white;
+    --darkviolet: #6563ff;
+    --ocasionalviolet: #7b7aff;
+    --midviolet: #b2b1ff;
+    --lightblue: #d8d8ff;
+    --whitecolor: #ffffff;
+    --blackcolor: #000000;
+    --paletalightgrey: #686869;
+    --paletamidgrey: #5B5B5F;
+    --paletadarkgrey: #2F2F38;
+    --paletacontent: #848282;
+}
+
+header{
+    background-color: #d8d8ff;
+    height: 100px;
+}
+
+header img{
+    width: 44px;
+    height: 43px;
+}
+
+.sidebar{
+    background-color: var(--midviolet);
+    align-items: center;
+}
+
+.sidebardark{
+    background-color: var(--paletamidgrey);
+    align-items: center;
+}
+
+.sidebar img{
+    width: 44px;
+    height: 43px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.wave1{
+    position: absolute;
+    width: 146px;
+    height: 43px;
+    background: var(--whitecolor);
+    border-radius: 8px 20px 20px 0px;;
+}
+
+.waveBlack1{
+    position: absolute;
+    width: 146px;
+    height: 43px;
+    background: var(--blackcolor);
+    border-radius: 20px;
+}
+
+.wave2{
+    position: absolute;
+    width: 146px;
+    height: 43px;
+    background: var(--whitecolor);
+    border-radius: 20px;
+}
+
+.waveBlack2{
+    position: absolute;
+    width: 88px;
+    height: 43px;
+    background: var(--blackcolor);
+    border-radius: 8px 20px 20px 0px;
+}
+
+.menu_hamburguesa{
+    background-color: #7b7aff;
+    border-right: var(--whitecolor);
+    /* height: 100%; */
+    overflow: hidden;
+    /* width: 60px; */
+}
+
+.menu_hamburguesa img{
+    width: 44px;
+    height: 43px;
+}
+
+.jumbotron{
+    background: url("./../../img/image_jumbo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+    margin-bottom: 20px ;
+}
+
+.jumbotron button{
+    text-align: center;
+    background-color: var(--darkviolet);
+}
+
+.textofondo{
+    border: 2px solid var(--paletadarkgrey);
+    background-color: var(--paletacontent);
+}
+
+.formufondo{
+    border: 2px solid var(--paletadarkgrey);
+    border-radius: 5%;
+    background-color: var(--paletacontent);
+}
+
+.footer{
+    background-color: var(--darkviolet);
+    color: var(--blackcolor);
+    clear: both;
+}
+
+.footer img{
+    width: 44px;
+    height: 43px;
+}
+
+.bar{
+    margin-top: 20px;
+    text-align: center;
+}
