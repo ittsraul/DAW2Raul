@@ -1,0 +1,3 @@
+FROM php:8-apache
+RUN apt-get -y apdate
+RUN docker-php-ext-install mysqli
