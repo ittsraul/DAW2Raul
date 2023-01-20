@@ -1,37 +1,37 @@
-version: "1"
+version: "3.1"
 services:
-   db:
-      image: mysql
-      ports: 
-         - "3306:3306"
-      #Habililta autenticación con contraseña desde mysql
-      command: --default-authentication-plugin=mysql_native_password 
-      #Variables de entorno
-      environment:
-         MYSQL_DATABASE: AEVDESP
-         MYSQL_PASSWORD: toor
-         MYSQL_ROOT_PASSWORD: toor
-      volumes:
-         - ./db:/docker-entrypoint-initdb.d
-      networks:
-         - default
-   www:
-      build: .
-      ports: 
-         - "80:80"
-      volumes:
-         - ./www:/var/www/html
-      links:
-         - db
-      networks:
-         - default
-   phpmyadmin:
-      image: phpmyadmin
-      links: 
-         - db
-      ports:
-         - "8000:80"
-      environment:
-         MYSQL_USER: raul
-         MYSQL_PASSWORD: toor
-         MYSQL_ROOT_PASSWORD: toor
+    db:
+        image: mysql
+        ports: 
+            - "3306:3306"
+        command: --default-authentication-plugin=mysql_native_password
+        environment:
+            MYSQL_DATABASE: Aevraul
+            MYSQL_PASSWORD: luar
+            MYSQL_ROOT_PASSWORD: luar 
+        volumes:
+            - ./db:/docker-entrypoint-initdb.d
+        networks:
+            - default
+    www:
+        build: .
+        ports: 
+            - "80:80"
+        volumes:
+            - ./www:/var/www/html
+        links:
+            - db
+        networks:
+            - default
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        links: 
+            - db:db
+        ports:
+            - 8000:80
+        environment:
+            MYSQL_USER: root
+            MYSQL_PASSWORD: luar
+            MYSQL_ROOT_PASSWORD: luar 
+volumes:
+    persistent:
