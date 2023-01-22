@@ -13,13 +13,38 @@
 }
 
 header{
-    background-color: #d8d8ff;
-    height: 100px;
+    background-color: var(--midviolet);
 }
 
-header img{
+.img-logo-header{
     width: 44px;
     height: 43px;
+}
+
+.navbar-bg-scube{
+    background-color: var(--midviolet);
+}
+
+.navbar-nav img{
+    width: 44px;
+    height: 43px;
+}
+
+.navbar-item{
+    margin-right: 20px;
+}
+
+.bg-card{
+    background-color: var(--paletacontent);
+}
+
+.card img{
+    width: 156px;
+    height: 160px;
+}
+
+main{
+    margin-top: 20px;
 }
 
 .sidebar{
@@ -35,6 +60,30 @@ header img{
 .sidebar img{
     width: 44px;
     height: 43px;
+}
+
+.div-opaco{
+    color: var(--darkviolet);
+    background-color: var(--whitecolor);
+    opacity: 0.3;
+}
+
+.jumbotron{
+    background: url("./../../img/jumbo/niño_cascos.jpg");
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.separado{
+    background-color: var(--ocasionalviolet);
+    color: var(--blackcolor);
+    margin-top: 30px;
+}
+
+.separado2{
+    background-color: var(--midviolet);
+    color: var(--blackcolor);
 }
 
 .wrapper{
@@ -87,19 +136,6 @@ header img{
     height: 43px;
 }
 
-.jumbotron{
-    background: url("./../../img/image_jumbo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 20px;
-    margin-bottom: 20px ;
-}
-
-.jumbotron button{
-    text-align: center;
-    background-color: var(--darkviolet);
-}
-
 .textofondo{
     border: 2px solid var(--paletadarkgrey);
     background-color: var(--paletacontent);
@@ -111,18 +147,19 @@ header img{
     background-color: var(--paletacontent);
 }
 
-.footer{
-    background-color: var(--darkviolet);
-    color: var(--blackcolor);
-    clear: both;
+section{
+    margin: 20px;
 }
-
-.footer img{
+footer{
+    margin-top: 20px;
+    background-color: var(--darkviolet);
+}
+footer img{
     width: 44px;
     height: 43px;
 }
 
-.bar{
-    margin-top: 20px;
-    text-align: center;
+.im-footer{
+    width: 100px;
+    height: 80px;
 }
