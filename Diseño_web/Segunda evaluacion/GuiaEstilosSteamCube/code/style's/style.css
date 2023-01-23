@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     outline: 1px solid springgreen; 
+}
+
 :root {
     --backcolor: white;
     --darkviolet: #6563ff;
@@ -64,8 +71,8 @@ main{
 
 .div-opaco{
     color: var(--darkviolet);
-    background-color: var(--whitecolor);
-    opacity: 0.3;
+    background-color: var(--paletalightgrey);
+    
 }
 
 .jumbotron{
@@ -91,50 +98,6 @@ main{
     flex-direction: row;
 }
 
-.wave1{
-    position: absolute;
-    width: 146px;
-    height: 43px;
-    background: var(--whitecolor);
-    border-radius: 8px 20px 20px 0px;;
-}
-
-.waveBlack1{
-    position: absolute;
-    width: 146px;
-    height: 43px;
-    background: var(--blackcolor);
-    border-radius: 20px;
-}
-
-.wave2{
-    position: absolute;
-    width: 146px;
-    height: 43px;
-    background: var(--whitecolor);
-    border-radius: 20px;
-}
-
-.waveBlack2{
-    position: absolute;
-    width: 88px;
-    height: 43px;
-    background: var(--blackcolor);
-    border-radius: 8px 20px 20px 0px;
-}
-
-.menu_hamburguesa{
-    background-color: #7b7aff;
-    border-right: var(--whitecolor);
-    /* height: 100%; */
-    overflow: hidden;
-    /* width: 60px; */
-}
-
-.menu_hamburguesa img{
-    width: 44px;
-    height: 43px;
-}
 
 .textofondo{
     border: 2px solid var(--paletadarkgrey);
@@ -145,6 +108,27 @@ main{
     border: 2px solid var(--paletadarkgrey);
     border-radius: 5%;
     background-color: var(--paletacontent);
+}
+
+.card-container{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+.card-img-top{
+    width: 156px;
+    height: 160px;
+}
+
+.bg-card{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: var(--lightblue);
+}
+.topstreamers img{
+    width: 100px;
+    height: 60px;
 }
 
 section{
