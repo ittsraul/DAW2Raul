@@ -100,9 +100,13 @@ main{
 .div-opaco{
     color: var(--darkviolet);
     background-color: var(--paletalightgrey);
-    
+    opacity: 0.8;
 }
 
+.textoseparado{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
 .jumbotron{
     background: url("./../../img/jumbo/niño_cascos.jpg");
     height: 600px;
@@ -112,30 +116,24 @@ main{
 }
 
 .imagen-tabla1{
-   background: url("./../../img/logos/logo_corto_simbolizado.png");
-   background-size: 60% 100%;
-   background-repeat: no-repeat;
+    width: 156px;
+    height: 160px;
 }
 
 .imagen-tabla2{
-    background: url("./../../img/go_live.jpg");
-    background-size: 60% 100%;
-    background-repeat: no-repeat;
+    width: 156px;
+    height: 160px;
  }
 
  .imagen-tabla3{
-    background: url("./../../img/night-mode.png");
-    background-size: 50% 90%;
-    background-repeat: no-repeat;
+    width: 156px;
+    height: 160px;
  }
 
- 
-
-.wrapper{
-    display: flex;
-    flex-direction: row;
+.imgCard img{
+    width: 156px;
+    height: 160px;
 }
-
 
 .textofondo{
     border: 2px solid var(--paletadarkgrey);
