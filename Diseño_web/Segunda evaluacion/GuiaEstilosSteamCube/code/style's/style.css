@@ -24,20 +24,24 @@
 
 h1{
     font-size: 28px;
-    font-family: "alternategothic";
+    font-family: "gotham";
 }
 
 h2{
     font-size: 24px;
+    font-family: "gotham";
 }
 
 h3{
     font-size: 20px;
-}
-p{
-    font-size: 16px;
     font-family: "gotham";
 }
+
+p{
+    font-size: 16px;
+    font-family: "alternategothic";
+}
+
 
 header{
     background-color: var(--midviolet);
@@ -50,6 +54,7 @@ header{
 .img-logo-header{
     width: 44px;
     height: 43px;
+    margin-left: 10px;
 }
 
 .navbar-bg-scube{
