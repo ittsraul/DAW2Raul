@@ -12,9 +12,39 @@
     --paletadarkgrey: #2F2F38;
     --paletacontent: #848282;
 }
+@font-face {
+    font-family: gotham;
+    src: url("./../../src/Gotham-Font/Gotham-Black.otf");
+}
+
+@font-face {
+    font-family: alternategothic;
+    src: url("./../../src/Alternate_Gothic/Alternate_Gothic/AlternateGotNo1D.ttf");
+}
+
+h1{
+    font-size: 28px;
+    font-family: "alternategothic";
+}
+
+h2{
+    font-size: 24px;
+}
+
+h3{
+    font-size: 20px;
+}
+p{
+    font-size: 16px;
+    font-family: "gotham";
+}
 
 header{
     background-color: var(--midviolet);
+}
+
+.headerdark{
+    background-color: var(--paletamidgrey);
 }
 
 .img-logo-header{
@@ -24,6 +54,10 @@ header{
 
 .navbar-bg-scube{
     background-color: var(--midviolet);
+}
+
+.navbar-bg-scube-dark{
+    background-color: var(--paletamidgrey);
 }
 
 .navbar-nav img{
@@ -74,18 +108,28 @@ main{
     height: 600px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    overflow: hidden;
 }
 
-.separado{
-    background-color: var(--ocasionalviolet);
-    color: var(--blackcolor);
-    margin-top: 30px;
+.imagen-tabla1{
+   background: url("./../../img/logos/logo_corto_simbolizado.png");
+   background-size: 60% 100%;
+   background-repeat: no-repeat;
 }
 
-.separado2{
-    background-color: var(--midviolet);
-    color: var(--blackcolor);
-}
+.imagen-tabla2{
+    background: url("./../../img/go_live.jpg");
+    background-size: 60% 100%;
+    background-repeat: no-repeat;
+ }
+
+ .imagen-tabla3{
+    background: url("./../../img/night-mode.png");
+    background-size: 50% 90%;
+    background-repeat: no-repeat;
+ }
+
+ 
 
 .wrapper{
     display: flex;
@@ -102,6 +146,23 @@ main{
     border: 2px solid var(--paletadarkgrey);
     border-radius: 5%;
     background-color: var(--paletacontent);
+    overflow: hidden;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.mini-form{
+    margin-top: 15px;
+}
+
+.formufondo-img{
+    background-image: url("./../../img/account.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    width: 156px;
+    height: 150px;
+    margin-top: 25px;
 }
 
 .card-container{
@@ -131,6 +192,12 @@ section{
 footer{
     margin-top: 20px;
     background-color: var(--darkviolet);
+}
+
+.footer-dark{
+    margin-top: 20px;
+    background-color: var(--paletadarkgrey);
+    color: var(--whitecolor);
 }
 footer img{
     width: 44px;
