@@ -1,0 +1,7 @@
+To do list for the exam
+
+Primero creas proyecto con vistas, componentes, services e interfaces.
+
+Consultamos apu, y recogemos lo que queremos, posteriormente vamos a quicktype y convertimos el json a typescript y lo pegamos en la interface.
+
+Empezamos a configurar los typescripts de el los componentes y vistas.
